@@ -1,0 +1,144 @@
+.App {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #2a2730;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.login {
+  width: 600px;
+  height: 350px;
+  border: 5px solid #0091ff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.login input {
+  margin: 10px;
+  width: 200px;
+  height: 30px;
+  border: 2px solid #0091ff;
+  background-color: transparent;
+  padding-left: 10px;
+  color: white;
+  font-size: 25px;
+}
+
+.login input:focus {
+  outline: none;
+}
+
+.enterRoom {
+  width: 200px;
+}
+
+.login button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: #0091ff;
+  color: white;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #0091ffd5;
+}
+
+.chatContainer {
+  width: 600px;
+  height: 350px;
+  border: 5px solid #0091ff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.chatContainer .messages {
+  flex: 8;
+  width: 100%;
+  padding-left: 20px;
+
+}
+
+.chatContainer .messageInputs {
+  flex: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.chatContainer .messageInputs input {
+  flex: 80%;
+  height: calc(100% - 6px);
+  border: none;
+  border-top: 5px solid #0091ff;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.chatContainer .messageInputs button {
+  flex: 20%;
+  height: 100%;
+  background-color: #0091ff;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+.messageItem {
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0091ff;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10px;
+  opacity: 0.9;
+  margin-top: 20px;
+}
+
+.messageContainer {
+  display: flex;
+  width: calc(100% - 30px);
+}
+
+.messageContainer h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 15px;
+  font-size: 15px;
+}
+
+#You {
+  justify-content: flex-start;
+}
+
+#Other {
+  justify-content: flex-end;
+}
+
+#Other .messageItem {
+  background-color: #5ff064;
+  color: black;
+}
